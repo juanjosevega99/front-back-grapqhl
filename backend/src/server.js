@@ -1,9 +1,8 @@
-const express = require('express')
-// const expressGraphQL = require('express-graphql')
-require('./database')
+import { GraphQLServer } from "graphql-yoga";
+import resolvers from './graphql/resolvers'
+import path from 'path'
 
-const app = express();
-
-app.listen(4000, () => {
-  console.log('Server running at 4000')
+export const server = new GraphQLServer({
+  typeDefs: path.join(__dirname, 'graphql/schema.graphql'),
+  resolvers
 })
