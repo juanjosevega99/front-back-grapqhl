@@ -4,7 +4,7 @@ import { gql } from "apollo-boost";
 
 const GET_MESSAGES = gql`
   {
-    message {
+    messages {
       _id
       title
       content
@@ -24,7 +24,7 @@ const MessageList = () => {
     <div className="row">
       <div className="col-md-6 offset-md-3">
         {
-          data.message.map(({ _id, title, content, author }) => (
+          data.messages.map(({ _id, title, content, author }) => (
             <div key={_id} className="card m-2">
               <div className="card-body">
                 <h4>{title}</h4>
