@@ -8,12 +8,11 @@
   },
   "author": "Juan Jose Vega",
   "license": "ISC",
+  "dependencies": {
+    "graphql-yoga": "^1.18.3",
+    "mongoose": "^5.9.28"
+  },
   "devDependencies": {
     "nodemon": "^2.0.4"
-  },
-  "dependencies": {
-    "express": "^4.17.1",
-    "express-graphql": "^0.11.0",
-    "mongoose": "^5.9.28"
   }
 }
