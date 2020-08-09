@@ -4,7 +4,7 @@
   "description": "Basic API CRUD",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/app.js"
+    "dev": "nodemon src/server.js"
   },
   "author": "Juan Jose Vega",
   "license": "ISC",
