@@ -13,6 +13,10 @@
     "mongoose": "^5.9.28"
   },
   "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
     "nodemon": "^2.0.4"
   }
 }
